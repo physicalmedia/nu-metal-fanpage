@@ -1,7 +1,65 @@
-<style>
-  body {
-    background-image: url('https://i.ytimg.com/vi/y4um9HIkOJ4/maxresdefault.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-  }
+<!DOCTYPE html>
+<html>
+<head>
+  <title>limp bizkit fanpage</title>
+  <style>
+    body {
+      background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+      color: #00ff00;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+    }
+    h1 {
+      color: yellow;
+      background: red;
+      padding: 10px;
+      border: 5px double #fff;
+    }
+    .marquee {
+      font-size: 24px;
+      color: #ff00ff;
+      background: #000;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: 200px;
+      height: auto;
+      border: 4px solid #ff0000;
+      box-shadow: 5px 5px 10px #000;
+    }
+    .blink {
+      animation: blink 1s steps(2, start) infinite;
+    }
+    @keyframes blink {
+      to { visibility: hidden; }
+    }
+    a {
+      color: lime;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="blink">Welcome to the Limp Bizkit Fanpage</h1>
+
+  <marquee class="marquee" behavior="scroll" direction="left">Keep rollin', rollin', rollin', rollin'...</marquee>
+
+
+  <h2></h2>image gallery</h2>
+  <div class="gallery">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Limp_Bizkit_-_Rock_am_Ring_2013_-_by_2eight_-_8SC8560.jpg/800px-Limp_Bizkit_-_Rock_am_Ring_2013_-_by_2eight_-_8SC8560.jpg" alt="Limp Bizkit 1">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Limp_Bizkit_-_2019.jpg/640px-Limp_Bizkit_-_2019.jpg" alt="Limp Bizkit 2">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Limp_Bizkit_-_Pinkpop_2015-14.jpg/640px-Limp_Bizkit_-_Pinkpop_2015-14.jpg" alt="Limp Bizkit 3">
+  </div>
+
+  <p style="margin-top: 40px;">Hit me up on <a href="https://github.com/">GitHub</a> or sign the guestbook!</p>
+
+</body>
+</html>
+
